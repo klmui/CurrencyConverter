@@ -22,6 +22,6 @@ public class Main2Activity extends AppCompatActivity {
         // Convert dollars to pounds
         double pounds = dollars * 0.77;
 
-        textView2.setText("Dollars: " + dollars + " -> Pounds: " + pounds);
+        textView2.setText("£" + pounds);
     }
 }

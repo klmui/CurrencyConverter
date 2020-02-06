@@ -37,7 +37,7 @@
         android:layout_width="357dp"
         android:layout_height="57dp"
         android:ems="10"
-        android:hint="Convert dollars to pounds"
+        android:hint="Enter amount in dollars"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
