@@ -17,6 +17,11 @@ public class Main2Activity extends AppCompatActivity {
 
         textView2 = (TextView) findViewById(R.id.textView2);
         Intent intent = getIntent(); // MainActivity sent an intent here
-        double dollars = intent.getDoubleExtra("dollars");
+        double dollars = intent.getDoubleExtra("dollars", 0);
+
+        // Convert dollars to pounds
+        double pounds = dollars * 0.77;
+
+        textView2.setText("Dollars: " + dollars + " -> Pounds: " + pounds);
     }
 }

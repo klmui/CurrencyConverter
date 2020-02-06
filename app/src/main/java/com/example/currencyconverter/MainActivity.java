@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         } catch(NumberFormatException e) {
             // Invalid double
             myTextField.setText("");
-            Toast.makeText(MainActivity.this, "Invalid number of dollars", Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(MainActivity.this, "Invalid number of dollars", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+            toast.show();
         }
     }
 

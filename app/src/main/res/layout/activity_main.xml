@@ -48,14 +48,15 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="146dp"
-        android:layout_height="47dp"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
         android:onClick="clickFunction"
         android:text="Convert"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintTop_toBottomOf="@+id/myTextField"
+        app:layout_constraintVertical_bias="0.051" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
